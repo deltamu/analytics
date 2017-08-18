@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <title>Analytics</title>
+    <link rel="stylesheet"
+          href="node_modules/material-components-web/dist/material-components-web.css">
+    <link rel="stylesheet"
+          href="styles.css">
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//deltamu.innocraft.cloud/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+  </head>
+
+  <body>
+    <!-- Toolbar -->
+    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <span class="mdc-toolbar__title">Analytics</span>
+        </section>
+      </div>
+    </header>
+    <!-- Everthing below the toolbar -->
+    <main class="mdc-toolbar-fixed-adjust">
+      <!-- Hero Message -->
+      <section class="hero">
+        <h2 class="mdc-typography--display4">Analytics</h2>
+      </section>
+      <!-- Grid layout -->
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell">
+            <div class="mdc-card demo-card">
+              <section class="mdc-card__primary">
+                <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+              </section>
+              <section class="mdc-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </section>
+              <section class="mdc-card__actions">
+                <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+              </section>
+            </div>
+
+          </div>
+          <div class="mdc-layout-grid__cell">
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input">
+              <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
+            </div>
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input2">
+              <label for="demo-input2" class="mdc-textfield__label">Tell us how you feel two!</label>
+            </div>
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input3">
+              <label for="demo-input3" class="mdc-textfield__label">Tell us how you feel three!</label>
+            </div>
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input4">
+              <label for="demo-input4" class="mdc-textfield__label">Tell us how you feel four!</label>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__cell">
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+            <p class="demo-paragraph">
+              A demo paragraph here.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+
+
+    <!-- Needed for waterfalling the toolbar -->
+    <script>
+      var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+      toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+    </script>
+
+    <!-- General instantiation of all material components-->
+    <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+    <script>mdc.autoInit()</script>
+  </body>
+</html>

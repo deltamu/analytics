@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/deltamu/analytics#readme",
   "dependencies": {
+    "live-server": "^1.2.0",
     "material-components-web": "^0.17.0"
   }
 }
