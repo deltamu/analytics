@@ -2,6 +2,7 @@
 <html class="mdc-typography">
   <head>
     <title>Analytics</title>
+
     <link rel="stylesheet"
           href="node_modules/material-components-web/dist/material-components-web.css">
     <link rel="stylesheet"
@@ -41,75 +42,19 @@
       <!-- Grid layout -->
       <div class="mdc-layout-grid">
         <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell">
-            <div class="mdc-card demo-card">
-              <section class="mdc-card__primary">
-                <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-                <h2 class="mdc-card__subtitle">Subtitle here</h2>
-              </section>
-              <section class="mdc-card__supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </section>
-              <section class="mdc-card__actions">
-                <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-                <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-              </section>
-            </div>
-
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <button class="mdc-button mdc-button--raised mdc-button--primary"
+                    data-mdc-auto-init="MDCRipple"
+                    onclick="location.href = 'alpha_site/index.html';">
+              Alpha Site
+            </button>
           </div>
-          <div class="mdc-layout-grid__cell">
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input">
-              <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
-            </div>
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input2">
-              <label for="demo-input2" class="mdc-textfield__label">Tell us how you feel two!</label>
-            </div>
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input3">
-              <label for="demo-input3" class="mdc-textfield__label">Tell us how you feel three!</label>
-            </div>
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input4">
-              <label for="demo-input4" class="mdc-textfield__label">Tell us how you feel four!</label>
-            </div>
-          </div>
-          <div class="mdc-layout-grid__cell">
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
-            <p class="demo-paragraph">
-              A demo paragraph here.
-            </p>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <button class="mdc-button mdc-button--raised mdc-button--accent"
+                    data-mdc-auto-init="MDCRipple"
+                    onclick="location.href = 'beta_site/index.html';">
+              Beta Site
+            </button>
           </div>
         </div>
       </div>
