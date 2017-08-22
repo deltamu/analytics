@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="mdc-typography">
   <head>
-    <title>Analytics/Alpha</title>
+    <title>Analytics/Beta</title>
     <link rel="stylesheet"
           href="../node_modules/material-components-web/dist/material-components-web.css">
     <link rel="stylesheet"
@@ -25,10 +25,13 @@
 
   <body>
     <!-- Toolbar -->
-    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall" style="background-color:rgb(185,18,27)">
+    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall" style="background-color:rgb(0,163,136)">
       <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <span class="mdc-toolbar__title">Analytics Alpha</span>
+          <span class="mdc-toolbar__title">Analytics Beta</span>
+        </section>
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+          <a href="../index.html" class="mdc-toolbar__icon"aria-label="Back" alt="Download">Back</a>
         </section>
       </div>
     </header>
@@ -37,7 +40,26 @@
       <!-- Grid layout -->
       <div class="mdc-layout-grid">
         <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input">
+              <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
+            </div>
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input2">
+              <label for="demo-input2" class="mdc-textfield__label">Tell us how you feel two!</label>
+            </div>
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input3">
+              <label for="demo-input3" class="mdc-textfield__label">Tell us how you feel three!</label>
+            </div>
+            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+              <input type="text" class="mdc-textfield__input" id="demo-input4">
+              <label for="demo-input4" class="mdc-textfield__label">Tell us how you feel four!</label>
+            </div>
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
             <div class="mdc-card demo-card">
               <section class="mdc-card__primary">
                 <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
@@ -96,25 +118,7 @@
             </div>
 
           </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input">
-              <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
-            </div>
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input2">
-              <label for="demo-input2" class="mdc-textfield__label">Tell us how you feel two!</label>
-            </div>
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input3">
-              <label for="demo-input3" class="mdc-textfield__label">Tell us how you feel three!</label>
-            </div>
-            <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-              <input type="text" class="mdc-textfield__input" id="demo-input4">
-              <label for="demo-input4" class="mdc-textfield__label">Tell us how you feel four!</label>
-            </div>
-          </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <p class="demo-paragraph">
               A demo paragraph here.
             </p>
